@@ -1,0 +1,50 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifiers      # JS/CSS minifiers run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+ejson                   # Extended and Extensible JSON library
+check                   # A lightweight package for argument checking and general pattern matching
+reactive-var            # Reactive variable
+
+accounts-password
+iron:router
+alanning:roles
+twbs:bootstrap
+mrt:jquery-ui
+fourseven:scss
+multiply:iron-router-progress
+mizzao:sharejs-ace
+matb33:collection-hooks
+reywood:publish-composite
+meteorhacks:fast-render
+aldeed:autoform
+aldeed:collection2
+todda00:friendly-slugs
+natestrauser:select2
+zimme:select2-bootstrap3-css
+aldeed:autoform-select2
+rajit:bootstrap3-datepicker
+aldeed:autoform-bs-datepicker
+momentjs:moment
+yogiben:autoform-modals
+hausor:autoform-bs-minicolors
+fortawesome:fontawesome
+mrt:chartjs
+jspdf:core
+juliancwirko:s-alert
+juliancwirko:s-alert-stackslide
+matthiaseckhart:avatar-upload
+meteorhacks:aggregate
