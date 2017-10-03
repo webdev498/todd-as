@@ -1,0 +1,10 @@
+<template name="productItem">
+    <a href="{{pathFor 'productDashboard'}}" class="list-group-item">
+        {{titleShort 'product'}}
+        -
+        <small class="text-muted">{{role}}</small>
+        <div class="post-time timestamp-list">
+            {{fromNow 'updatedAt'}} <i class="fa fa-clock-o"></i>
+        </div>
+    </a>
+</template>

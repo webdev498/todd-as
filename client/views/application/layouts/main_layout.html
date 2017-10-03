@@ -1,0 +1,15 @@
+<template name="mainLayout">
+    {{> sAlert template='sAlertCustom'}}
+    {{#if currentUser}}
+        <header class="header">
+            {{> navigationBar}}
+        </header>
+        <div class="wrapper">
+            {{> autoformModals}}
+            {{> editYourAvatarModal}}
+            {{> yield}}
+        </div>
+    {{else}}
+        {{> yield}}
+    {{/if}}
+</template>

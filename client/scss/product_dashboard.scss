@@ -1,0 +1,43 @@
+.panel-scrollable {
+  overflow-y: scroll;
+  max-height: 590px;
+}
+
+.main {
+  padding: 20px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.product-dashboard-statistic-block {
+  .info-content {
+    background-color: #110022 !important;
+  }
+  .visual-sugar-block {
+    .visual-sugar-text {
+      color: #ffffff !important;
+    }
+  }
+  .red > span:nth-child(1) {
+    margin-left: 12px !important;
+  }
+  .orange > span:nth-child(1) {
+    margin-top: 14px !important;
+    margin-left: 22px !important;
+  }
+  .green > span:nth-child(1) {
+    margin-left: 16px !important;
+  }
+  .blue > span:nth-child(1) {
+    margin-top: 14px !important;
+    margin-left: 14px !important;
+  }
+}

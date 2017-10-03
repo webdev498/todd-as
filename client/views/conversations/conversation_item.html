@@ -1,0 +1,9 @@
+<template name="conversationItem">
+    <a href="{{pathFor 'conversation'}}" class="list-group-item">
+        {{subject}}
+        <small class="text-muted">{{role}}</small>
+        <div class="post-time timestamp-list">
+            {{fromNow 'updatedAt'}} <i class="fa fa-clock-o"></i>
+        </div>
+    </a>
+</template>

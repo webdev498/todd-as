@@ -1,0 +1,9 @@
+<template name="documentList">
+    <h3>Pick a document...</h3>
+    <ul class="nav nav-pills nav-stacked" id="list">
+        {{#each documents}}
+            {{> documentItem}}
+        {{/each}}
+    </ul>
+    <h3><a href="" id="new-document">...or start a new one.</a></h3>
+</template>

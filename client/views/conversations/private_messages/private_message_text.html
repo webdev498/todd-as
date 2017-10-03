@@ -1,0 +1,23 @@
+<template name="privateMessageText">
+    <li class="left clearfix">
+        {{#with user}}
+            <span class="chat-img pull-left"> <a class="" href="{{pathFor 'profilePage'}}">
+                <img class="media-object img-rounded" src="{{avatar}}" alt="{{username}}">
+            </a></span>
+        {{/with}}
+        <div class="chat-body clearfix">
+            <div class="header">
+                {{#with user}}
+                    <a href="{{pathFor 'profilePage'}}"><strong>{{username}}</strong></a>
+                {{/with}}
+                <div class="post-time pull-right">
+                    {{fromNow 'updatedAt'}}
+                    <i class="fa fa-clock-o"></i>
+                </div>
+            </div>
+            <p>
+                {{text}}
+            </p>
+        </div>
+    </li>
+</template>

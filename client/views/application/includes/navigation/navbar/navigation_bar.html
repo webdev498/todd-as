@@ -1,0 +1,48 @@
+<template name="navigationBar">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nav-logo-container-navigation" href="{{pathFor 'dashboard'}}">
+                    <img class="nav-logo nav-logo-navigation" src="/images/logo-white.png" alt="Logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{pathFor 'productCreate'}}"><i class="fa fa-cubes"></i> New Product</a></li>
+                    {{#with currentUser}}
+                        <li class="dropdown notifications">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><i
+                                    class="fa fa-bell"></i> {{#if notificationCount}}<span
+                                    class="badge badge-danger pull-right">{{notificationCount}}</span>{{else}}<span
+                                    class="caret"></span>{{/if}}
+                            </a>
+                            {{> notifications}}
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><i
+                                    class="fa fa-user"></i> {{currentUserUsername}} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    {{#if displayChangePasswordForm}}
+                                        {{> changePassword}}
+                                    {{else}}
+                                        {{> userOverview}}
+                                    {{/if}}
+                                </li>
+                            </ul>
+                        </li>
+                    {{/with}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>

@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+.custom-container {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50px;
+  background-color: #ebeef2;
+  width: 100%;
+  min-height: 100%;
+}
+
+#iron-router-progress {
+  background-color: #fa2600;
+  box-shadow: 0 0 1px #333333;
+  height: 2px !important;
+}
+
+.single-form {
+  background-color: #FFFFFF;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.single-panel {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.single-button-h2-single-form {
+  margin-top: 25px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  left: 0;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.timestamp-text {
+  float: right;
+  margin-right: 5px;
+}
+
+.timestamp-icon {
+  float: right;
+}
+
+.post-time {
+  color: #858b8f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .6em;
+  line-height: 15px;
+  margin: 0;
+}
+
+.timestamp-list {
+  display: inline;
+  float: right;
+}

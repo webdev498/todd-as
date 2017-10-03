@@ -1,0 +1,12 @@
+<template name="documents">
+    {{#with product}}
+        <div class="row upper">
+            <div class="col-sm-4 full-height panel">
+                {{> documentList}}
+            </div>
+            <div class="col-sm-8 editor-container full-height">
+                {{> editor}}
+            </div>
+        </div>
+    {{/with}}
+</template>
